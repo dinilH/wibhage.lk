@@ -1,0 +1,142 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~WEB PROJECT FOR YOUNG COMPUTER SCIENTIST COMPETITION~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+			
+		█░█░█ █ █▄▄ █░█ ▄▀█ █▀▀ █▀▀   █░░ █▄▀
+		▀▄▀▄▀ █ █▄█ █▀█ █▀█ █▄█ ██▄   █▄▄ █░█
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+PROJECT:- Future Hopes
+Developer:- K.P.K Dinil Hansara
+School:- G/Richmond College
+Grade:- 13
+Email:- dinilhansara@gmail.com
+
+--------------------------------INSTALLATION------------------------------------------------------------
+
+localhost
+*Use XAMPP/WAMPP/MAMPP and start Apache and Mysql
+*As the database is essential for the project,
+	*Database is included in the "database" folder named " wibhage_lk.sql "
+	*Open Mysql and create a database named wibhage_lk	(If you want to use a different name,you have to change value of $db in "conn.php" file also.)
+	*Select database and go to "import" tab in mysql and import wibhage_lk.sql file.
+
+*Place the project in htdocs folder.
+*Make sure you have an active internet connection(Internet connection is used throughout the application )
+*You are almost done,Open the project using localhost.(CHROME/EDGE/FIREFOX browsers are recommend for a better experience)
+
+*To enter the core of this application,You have to login
+
+	USER:
+	*You can register as a new user or
+	*Login using an existing account
+	*Login details:-
+			*email    - demo@wibhage.lk
+			*password - 12345
+	ADMINISTRATOR:
+	*Visit admin path
+		ex:- http://localhost/wibhage.lk/admin/
+	*Login
+		*Username: admin  
+		*password : admin123
+---------------------------------------------------------------------------------------------------------
+
+
+
+-----------------------------------ABOUT---------------------------------------------------------------
+
+Wibhage.lk is a online examination platform. Through this website,students can face to their examinations as usual before. 
+A huge problem that we as students have faced with the onset of the covid 19 pandemic is the practical conduct of examinations. 
+As a solution for this, students have the opportunity to conduct examinations successfully at home as before under the supervision 
+of a teacher online as a live exam through wibhage.lk. Our platform consists of advanced features to achive this object.
+
+WHAT'S SPECIAL?
+
+*Create your own exam and let students to attend online.
+*Attend to exam on a specific time remotely.
+*Ability to complete exam within a given time range.
+*Examine students in the exam with the ability to see and hear what they do.
+*See what students do while the exam in their screens with "screen share" facility 
+*Record the exam.
+*Provide students to answer randomly chosen questions.
+*Ability to see students' performace and ranks.
+*Safety
+*And more and more... 
+---------------------------------------------------------------------------------------------------------
+
+-----------------------Overview of the technology used---------------------------------------------------
+
+FRONT-END:-
+	*HTML
+	*CSS
+	*Java Script
+
+BACK-END:-
+	*PHP
+	*SQL
+	*Java Script
+	*AJAX
+
+Libraries used:-
+	*Bootstrap 3,Bootstrap 4
+	*JQUERY
+	*Sweet alert -For popup messages
+	*facebox -For few of modals
+	*fulcalendar.io -For exam calendar
+	*Font awesome -For icons
+	*PE-7- For icons
+	*TinyMSC- For the text editor
+	*Owl carousal- For image slideshow
+	*Date Range Picker.js -To select dates
+	*Dashboardpack- For some dashboard elements
+	*Animate.css -For attrative animations
+	*Perfect scrollbar- For custom scollbar
+	
+	**Jitsy Meeting -For exam meeting facility
+	**NO CMS OR web authoring tools used
+
+Text editor used:-
+	*Notepad++
+
+Graphics:-
+	*Photoshop CC 2020
+---------------------------------------------------------------------------------------------------------
+
+---------------------------Errors can be occured-----------------------------------------------------------
+
+*Connection failed                   : Make sure database is correctly connected.In this case,mouse click won't work.If couldn't fix using any method, try modifying conn.php (PDO connection is must. mysqli connections won't work)
+*fonts/css/links not working properly: Check your internet connection
+*getUserMedia() error                : This may occur in exams with camera tracking.Give permissions for camera aand mic to solve this.
+*Exam doesn't begin at the time I scheduled: This occurs if you are not in Sri Lanka or use vpn/tor browser.Time zone is hard coded as Sri Lanka because of localhost environment.If you are viewing site overseas,change your time zone in query/selExamAttemptExe.php line:10
+*Can't scroll                        : This is not a bug,You may pointed mouse in another sub scrollable div. try scrolling on the right/left side.
+*Sinhala characters not showing      :To avoid errors use English on localhost when creating accounts and creating exams.
+*When I logged as user,cannot log into admin: This can be occured due to session cache.It's better to use seperate browsers to login as user /admin 
+---------------------------------------------------------------------------------------------------------
+------------------------------Software info--------------------------------------------------------------
+Currrent version- 1.2
+Version 1.1     -Added time limit and start exam in a specific time
+version 1.2     -Added camera tracking facility,screen share,meeting record with jitsy meetings
+
+further modifications can be done:-
+	*Add structured question papers-This can be succeed with simple upgrades in several files
+	*Add essay questions           -Giving users questions and give a input field to upload their answers as pdf of image within the time range with the supervision of examiner via Jitsy meeting
+	*Add exam analytics            -It is super easy to implement chart.js and show students and their examiner analytics
+	*Imrove meeting facilities     -As I configured a free Jitsy meeting account,their are limits.We can buy a premium api key and improve meeting facilities
+	*Send mail		       -As php mail() function does'n run in normal localhost,I haven't included this.When we include this into site,We can inform students about everything in the exam
+	*Improve security              -Some exams should be accessed by permissioned users.Also this can be archeived simply changing some code and add a column into exam_tbl.
+					Many more security modifications like avoid sql injection,XSS should be done before Handing over to the public
+ 
+---------------------------------------------------------------------------------------------------------
+
+If there is any problem regarding the web,feel free to contact me
+	Dinil Hansara
+	Mobile- 0715565890
+
+I also hosted this web application in a free server.But with its' limits,You may can't experience camera tracking facility often.
+
+	Link:- http://wibhagelk.000webhostapp.com
+
+One of my first projects,(mannually coded)
+https://techzonezlk.000webhostapp.com/
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~THANK_YOU~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~	
